@@ -1,0 +1,14 @@
+<view  bindtap="getMsg">
+	<!-- <block bindtap="getMsg">点击</block> -->
+   <!-- <p bindtap="getMsg">To</p> -->
+   点击
+</view>
+<view>
+姓名：{{userInfo.name}}
+年龄：{{userInfo.age}}
+</view>
+<view>
+	<block>
+		<text>def</text>
+	</block>
+</view>
