@@ -1,6 +1,6 @@
 let appId = 'wxb051d27ec2b39de5'
 
-let serverUrl = 'http://192.168.59.238:8080';
+let serverUrl = 'https://111.229.53.45';
 
 module.exports = {
   serverUrl
