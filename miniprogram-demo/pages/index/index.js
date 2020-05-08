@@ -9,7 +9,7 @@ Page({
 
   getData: function () {
     wx.request({
-      url: 'https://sanweishidai.xyz',
+      url: 'http://sanweishidai.xyz',
       data: {
         //请求参数
       },
