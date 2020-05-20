@@ -4,12 +4,13 @@ const app = getApp()
 Page({
   data: {
     // userInfo: { name: "zhansgan", age: 18 }
-    userInfo: {}
+    userInfo: {},
+    msg: "123"
   },
 
   getData: function () {
     wx.request({
-      url: 'http://sanweishidai.xyz',
+      url: 'https://www.sanweishidai.xyz',
       data: {
         //请求参数
       },
@@ -20,9 +21,11 @@ Page({
       timeout: 5000,
       method: "GET",
       // dataType: 返回数据格式 默认json
-      success: function (res) {
+      success: (res)=> {
         console.info(res.data);
-        console.info(res.statusCode)
+        console.info(res.statusCode);
+        // this.data.msg = "res.data"
+        this.setData({ msg: "res.data" })
         //成功执行的函数
       },
       fail: function (err) {
@@ -60,6 +63,12 @@ Page({
       }
     })
 
+  },
+
+  goto: function() {
+    wx.navigateTo({
+      url: '../logs/logs',
+    })
   }
 
   // getMsg: function() {

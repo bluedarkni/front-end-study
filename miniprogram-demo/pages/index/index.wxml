@@ -39,4 +39,8 @@
 </view>
 <view bindtap="getData">
 	查询后端服务获取数据
+  {{msg}}
+</view>
+<view bindtap="goto">
+跳转
 </view>
